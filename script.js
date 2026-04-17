@@ -257,35 +257,9 @@ document.getElementById('backToTop').addEventListener('click', () => {
 });
 
 /* ============================================
-   PROJECT PREVIEW CARD
+   PROJECT CARD INTERACTIONS (removed floating preview — images now inline)
    ============================================ */
 
-const projectRows = document.querySelectorAll('.project-row');
-const previewCard = document.getElementById('previewCard');
-
-if (previewCard) {
-    projectRows.forEach((row) => {
-        row.addEventListener('mouseenter', () => {
-            const title = row.querySelector('.project-title').textContent;
-            const brief = row.querySelector('.project-brief').textContent;
-            const imageSrc = row.querySelector('.project-preview').dataset.previewImage;
-
-            previewCard.querySelector('.preview-image').src = imageSrc;
-            previewCard.querySelector('.preview-title').textContent = title;
-            previewCard.querySelector('.preview-description').textContent = brief;
-            previewCard.style.opacity = '1';
-        });
-
-        row.addEventListener('mouseleave', () => {
-            previewCard.style.opacity = '0';
-        });
-
-        row.addEventListener('mousemove', (e) => {
-            previewCard.style.left = (e.clientX + 30) + 'px';
-            previewCard.style.top = (e.clientY + 30) + 'px';
-        });
-    });
-}
 
 /* ============================================
    WORD ANIMATION

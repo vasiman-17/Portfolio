@@ -154,13 +154,18 @@
         <div class="work-container">
             <h2 class="section-title reveal-up">Featured Projects</h2>
 
-            <div class="projects-list">
+            <div class="projects-showcase">
                 <!-- PROJECT 1: SYNCRO -->
-                <div class="project-row reveal-up" style="--delay: 0.1s;" data-project="syncro">
-                    <div class="project-badge">01</div>
-                    <div class="project-info">
+                <div class="project-card reveal-up" style="--delay: 0.1s;">
+                    <span class="project-watermark">01</span>
+                    <div class="project-image-wrapper">
+                        <img src="assets/syncro.png" alt="SYNCRO — Team Collaboration Platform" class="project-img" loading="lazy">
+                        <div class="project-image-overlay"></div>
+                    </div>
+                    <div class="project-details">
+                        <span class="project-label">Full Stack Platform</span>
                         <h3 class="project-title">SYNCRO</h3>
-                        <p class="project-brief">Full-stack team collaboration platform enabling seamless project management and application tracking. Features include Google OAuth authentication, JWT-based security, real-time project discovery, and comprehensive tracking system. Built to streamline team workflows and enhance collaborative productivity for college communities.</p>
+                        <p class="project-brief">Full-stack team collaboration platform enabling seamless project management and application tracking. Features include Google OAuth authentication, JWT-based security, real-time project discovery, and comprehensive tracking system.</p>
                         <div class="project-tech">
                             <span class="tech-badge">React</span>
                             <span class="tech-badge">Node.js</span>
@@ -173,15 +178,19 @@
                             <a href="https://syncro-brown.vercel.app/auth" target="_blank" class="link-arrow">Live Demo →</a>
                         </div>
                     </div>
-                    <div class="project-preview" data-preview-image="assets/syncro.png" data-preview-title="SYNCRO" data-preview-desc="Team Collaboration Platform"></div>
                 </div>
 
                 <!-- PROJECT 2: FLOWBOARD -->
-                <div class="project-row reveal-up" style="--delay: 0.2s;" data-project="flowboard">
-                    <div class="project-badge">02</div>
-                    <div class="project-info">
+                <div class="project-card project-card--reversed reveal-up" style="--delay: 0.2s;">
+                    <span class="project-watermark">02</span>
+                    <div class="project-image-wrapper">
+                        <img src="assets/flowboard.png" alt="FLOWBOARD — Visual API Orchestration" class="project-img" loading="lazy">
+                        <div class="project-image-overlay"></div>
+                    </div>
+                    <div class="project-details">
+                        <span class="project-label">Developer Tool</span>
                         <h3 class="project-title">FLOWBOARD</h3>
-                        <p class="project-brief">Visual API orchestration tool featuring a powerful node-based workflow builder with DAG (Directed Acyclic Graph) execution engine. Enables users to build, test, and execute complex workflows through an intuitive canvas interface. Designed for developers and non-technical users to automate API integrations without writing code.</p>
+                        <p class="project-brief">Visual API orchestration tool featuring a powerful node-based workflow builder with DAG execution engine. Enables users to build, test, and execute complex workflows through an intuitive canvas interface.</p>
                         <div class="project-tech">
                             <span class="tech-badge">Node.js</span>
                             <span class="tech-badge">MongoDB</span>
@@ -194,15 +203,19 @@
                             <span class="link-disabled">Coming Soon</span>
                         </div>
                     </div>
-                    <div class="project-preview" data-preview-image="assets/flowboard.png" data-preview-title="FLOWBOARD" data-preview-desc="Visual API Orchestration"></div>
                 </div>
 
                 <!-- PROJECT 3: DICE GAME -->
-                <div class="project-row reveal-up" style="--delay: 0.3s;" data-project="dice-game">
-                    <div class="project-badge">03</div>
-                    <div class="project-info">
+                <div class="project-card reveal-up" style="--delay: 0.3s;">
+                    <span class="project-watermark">03</span>
+                    <div class="project-image-wrapper">
+                        <img src="assets/dice-game.png" alt="DICE GAME — Interactive Browser Game" class="project-img" loading="lazy">
+                        <div class="project-image-overlay"></div>
+                    </div>
+                    <div class="project-details">
+                        <span class="project-label">Vanilla JS Game</span>
                         <h3 class="project-title">DICE GAME</h3>
-                        <p class="project-brief">Interactive browser-based 2-player dice game featuring real-time gameplay mechanics and dynamic UI updates. Implements automatic winner detection, score tracking, and engaging animations. Pure vanilla JavaScript implementation showcasing DOM manipulation and game logic without external frameworks or libraries.</p>
+                        <p class="project-brief">Interactive browser-based 2-player dice game featuring real-time gameplay mechanics and dynamic UI updates. Implements automatic winner detection, score tracking, and engaging animations with pure vanilla JavaScript.</p>
                         <div class="project-tech">
                             <span class="tech-badge">HTML5</span>
                             <span class="tech-badge">CSS3</span>
@@ -214,17 +227,7 @@
                             <span class="link-disabled">Coming Soon</span>
                         </div>
                     </div>
-                    <div class="project-preview" data-preview-image="assets/dice-game.png" data-preview-title="DICE GAME" data-preview-desc="Interactive Browser Game"></div>
                 </div>
-            </div>
-        </div>
-
-        <!-- FLOATING PREVIEW CARD -->
-        <div class="preview-card" id="previewCard">
-            <img src="" alt="" class="preview-image">
-            <div class="preview-content">
-                <h4 class="preview-title"></h4>
-                <p class="preview-description"></p>
             </div>
         </div>
     </section>
