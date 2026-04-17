@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Vasistha — Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR WITH CODE SNIPPETS -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="#" class="navbar-logo">Vaibhav</a>
+            <div class="navbar-links">
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <!-- CODE SNIPPETS ON RIGHT -->
+            <div class="navbar-snippets">
+                <div class="snippet-item">const build = <span class="snippet-accent">"amazing"</span></div>
+                <div class="snippet-item">async deploy() { <span class="snippet-accent">✓</span> }</div>
+                <div class="snippet-item">print(<span class="snippet-accent">"AI"</span>)</div>
+                <div class="snippet-item">git push <span class="snippet-accent">origin</span></div>
+            </div>
+
+            <button class="menu-toggle" aria-label="menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-menu">
+        <a href="#work" class="mobile-menu-link">Work</a>
+        <a href="#about" class="mobile-menu-link">About</a>
+        <a href="#contact" class="mobile-menu-link">Contact</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content reveal-up" style="--delay: 0.1s;">
+                <h1 class="text-huge">
+                    <span class="word">Full</span>
+                    <span class="word">Stack</span>
+                    <span class="word">Developer</span>
+                </h1>
+                <p class="hero-subtitle reveal-up" style="--delay: 0.2s;">
+                    Building scalable, production-ready applications with React, Node.js, and modern web technologies. Currently learning AI/ML fundamentals.
+                </p>
+                <div class="hero-cta reveal-up" style="--delay: 0.3s;">
+                    <a href="#contact" class="btn btn-primary">Let's Talk</a>
+                    <a href="#work" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
+            <div class="hero-visual reveal-right" style="--delay: 0.4s;">
+                <div class="gradient-orb"></div>
+                <div class="code-block">
+                    <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">buildAmazing</span> = <span class="code-string">"solutions"</span></div>
+                    <div class="code-line"><span class="code-keyword">function</span> <span class="code-func">deploy</span>() {</div>
+                    <div class="code-line indent-1"><span class="code-keyword">return</span> <span class="code-string">"production ready"</span></div>
+                    <div class="code-line">}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="experience scroll-reveal">
+        <div class="experience-container">
+            <h2 class="section-title reveal-up">Experience</h2>
+            <div class="experience-list">
+                <div class="experience-item reveal-left" style="--delay: 0.1s;">
+                    <div class="exp-header">
+                        <h3 class="exp-title">Robocon</h3>
+                        <span class="exp-date">Hands-on Training • August 2023 – September 2023</span>
+                    </div>
+                    <p class="exp-description">Completed intensive hands-on training in full-stack web development, mastering frontend technologies and backend development. Contributed to club projects involving complex collaborative systems and debugging. Strengthened problem-solving skills through practical implementation of web development concepts and deployment strategies.</p>
+                    <div class="exp-tags">
+                        <span class="tag">Frontend Dev</span>
+                        <span class="tag">Backend Dev</span>
+                        <span class="tag">Full Stack</span>
+                        <span class="tag">HTTP/REST APIs</span>
+                    </div>
+                </div>
+
+                <div class="experience-item reveal-left" style="--delay: 0.2s;">
+                    <div class="exp-header">
+                        <h3 class="exp-title">Full Stack Developer</h3>
+                        <span class="exp-date">Self-Employed | 2023–Present</span>
+                    </div>
+                    <p class="exp-description">Building production-level applications from concept to deployment. Architecting scalable backend systems with Node.js and Express, creating responsive frontends with React, and managing NoSQL databases. Implementing authentication systems, REST APIs, and deploying applications to production environments.</p>
+                    <div class="exp-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Full Stack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK SECTION -->
+    <section id="work" class="work scroll-reveal">
+        <div class="work-container">
+            <h2 class="section-title reveal-up">Featured Projects</h2>
+
+            <div class="projects-list">
+                <!-- PROJECT 1: SYNCRO -->
+                <div class="project-row reveal-up" style="--delay: 0.1s;" data-project="syncro">
+                    <div class="project-badge">01</div>
+                    <div class="project-info">
+                        <h3 class="project-title">SYNCRO</h3>
+                        <p class="project-brief">Team collaboration platform with OAuth authentication, JWT tokens, real-time project discovery and application tracking</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">OAuth</span>
+                            <span class="tech-badge">REST APIs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vasiman-17/syncro" target="_blank" class="link-arrow">GitHub →</a>
+                            <a href="https://syncro-brown.vercel.app/auth" target="_blank" class="link-arrow">Live Demo →</a>
+                        </div>
+                    </div>
+                    <div class="project-preview"
+                        data-preview-image="assets/syncro.png"
+                        data-preview-title="SYNCRO"
+                        data-preview-desc="Team Collaboration Platform"
+                    ></div>
+                </div>
+
+                <!-- PROJECT 2: FLOWBOARD -->
+                <div class="project-row reveal-up" style="--delay: 0.2s;" data-project="flowboard">
+                    <div class="project-badge">02</div>
+                    <div class="project-info">
+                        <h3 class="project-title">FLOWBOARD</h3>
+                        <p class="project-brief">Visual API orchestration tool with node-based workflow builder and DAG execution engine for complex automation</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">Express</span>
+                            <span class="tech-badge">DAG Engine</span>
+                            <span class="tech-badge">Canvas API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vasiman-17/Flowboard" target="_blank" class="link-arrow">GitHub →</a>
+                            <span class="link-disabled">Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="project-preview"
+                        data-preview-image="assets/flowboard.png"
+                        data-preview-title="FLOWBOARD"
+                        data-preview-desc="Visual API Orchestration"
+                    ></div>
+                </div>
+
+                <!-- PROJECT 3: DICE GAME -->
+                <div class="project-row reveal-up" style="--delay: 0.3s;" data-project="dice-game">
+                    <div class="project-badge">03</div>
+                    <div class="project-info">
+                        <h3 class="project-title">DICE GAME</h3>
+                        <p class="project-brief">Interactive browser-based game featuring real-time gameplay, dynamic UI updates, and automated winner detection</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">Vanilla JS</span>
+                            <span class="tech-badge">DOM API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vasiman-17/dice-game" target="_blank" class="link-arrow">GitHub →</a>
+                            <span class="link-disabled">Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="project-preview"
+                        data-preview-image="assets/dice-game.png"
+                        data-preview-title="DICE GAME"
+                        data-preview-desc="Interactive Browser Game"
+                    ></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FLOATING PREVIEW CARD -->
+        <div class="preview-card" id="previewCard">
+            <img src="" alt="" class="preview-image">
+            <div class="preview-content">
+                <h4 class="preview-title"></h4>
+                <p class="preview-description"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION (ANIMATED) -->
+    <section id="skills" class="skills scroll-reveal">
+        <div class="skills-container">
+            <h2 class="section-title reveal-up">Technical Expertise</h2>
+
+            <div class="skills-wrapper">
+                <!-- FRONTEND SKILLS -->
+                <div class="skill-group" style="--delay: 0.1s;">
+                    <h3 class="group-title">Frontend</h3>
+                    <div class="skills-scroll-container">
+                        <div class="skills-scroll-track">
+                            <span class="skill-item">JavaScript ES6+</span>
+                            <span class="skill-item">React</span>
+                            <span class="skill-item">HTML5 & CSS3</span>
+                            <span class="skill-item">TypeScript</span>
+                            <span class="skill-item">Tailwind CSS</span>
+                            <span class="skill-item">Responsive Design</span>
+                            <span class="skill-item">JavaScript ES6+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BACKEND SKILLS -->
+                <div class="skill-group" style="--delay: 0.2s;">
+                    <h3 class="group-title">Backend</h3>
+                    <div class="skills-scroll-container">
+                        <div class="skills-scroll-track">
+                            <span class="skill-item">Node.js</span>
+                            <span class="skill-item">Express.js</span>
+                            <span class="skill-item">MongoDB</span>
+                            <span class="skill-item">RESTful APIs</span>
+                            <span class="skill-item">JWT Auth</span>
+                            <span class="skill-item">Database Design</span>
+                            <span class="skill-item">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI/ML & TOOLS -->
+                <div class="skill-group" style="--delay: 0.3s;">
+                    <h3 class="group-title">AI/ML & Tools</h3>
+                    <div class="skills-scroll-container">
+                        <div class="skills-scroll-track">
+                            <span class="skill-item">Machine Learning</span>
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">Git & GitHub</span>
+                            <span class="skill-item">Docker</span>
+                            <span class="skill-item">Vercel</span>
+                            <span class="skill-item">Firebase</span>
+                            <span class="skill-item">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about scroll-reveal">
+        <div class="about-container">
+            <h2 class="section-title reveal-up">Building the Future, One Line at a Time</h2>
+
+            <div class="about-content">
+                <div class="about-text reveal-up" style="--delay: 0.1s;">
+                    <p>
+                        I'm a full-stack developer passionate about creating elegant solutions to complex problems. With expertise in modern web technologies, I transform ideas into production-ready applications that users love.
+                    </p>
+                    <p>
+                        My journey started with curiosity about how things work online. Today, I'm proficient in everything from responsive frontend design to scalable backend architecture. I combine technical depth with a user-first mindset, while currently expanding into AI/ML to build smarter solutions.
+                    </p>
+                    <p>
+                        Currently pursuing advanced studies in Artificial Intelligence at SRM KTR while actively building real products. I believe in continuous learning, clean code, and shipping fast.
+                    </p>
+                </div>
+
+                <div class="about-skills reveal-up" style="--delay: 0.2s;">
+                    <div class="floating-skill" style="animation-delay: 0s;">React</div>
+                    <div class="floating-skill" style="animation-delay: 0.5s;">Node.js</div>
+                    <div class="floating-skill" style="animation-delay: 1s;">MongoDB</div>
+                    <div class="floating-skill" style="animation-delay: 1.5s;">Python</div>
+                    <div class="floating-skill" style="animation-delay: 2s;">JavaScript</div>
+                    <div class="floating-skill" style="animation-delay: 2.5s;">ML</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section id="contact" class="cta scroll-reveal">
+        <div class="cta-container">
+            <h2 class="cta-title reveal-up">Got An Idea?</h2>
+            <p class="cta-subtitle reveal-up" style="--delay: 0.1s;">Let's build something amazing together.</p>
+
+            <!-- SOCIAL BUTTONS -->
+            <div class="social-buttons reveal-up" style="--delay: 0.2s;">
+                <button class="social-btn github-btn" onclick="window.open('https://github.com/vasiman-17', '_blank')">
+                    <span class="btn-icon">〰</span>
+                    <span class="btn-text">View GitHub</span>
+                </button>
+                <button class="social-btn linkedin-btn" onclick="window.open('https://www.linkedin.com/in/vaibhav-vasistha-8a6803358/', '_blank')">
+                    <span class="btn-icon">→</span>
+                    <span class="btn-text">View LinkedIn</span>
+                </button>
+            </div>
+
+            <!-- CONTACT FORM -->
+            <form class="contact-form reveal-up" style="--delay: 0.3s;" id="contactForm">
+                <input type="text" id="contactName" placeholder="Your name" required class="form-input">
+                <input type="email" id="contactEmail" placeholder="Your email" required class="form-input">
+                <textarea id="contactMsg" placeholder="Tell me about your project" rows="4" required class="form-input"></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- SUCCESS MODAL -->
+    <div class="success-modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">✓</div>
+            <h3>Message Sent!</h3>
+            <p>Thanks for reaching out. I'll get back to you soon.</p>
+            <button class="modal-close" onclick="document.getElementById('successModal').classList.remove('show')">Close</button>
+        </div>
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop" class="back-to-top" aria-label="back to top">↑</button>
+
+    <!-- CUSTOM CURSOR CANVAS -->
+    <canvas id="cursorCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
