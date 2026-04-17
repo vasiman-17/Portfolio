@@ -347,11 +347,43 @@ a {
 
 .navbar-logo {
     font-family: var(--font-display);
-    font-size: 1.125rem;
+    font-size: 1.35rem;
     font-weight: 700;
     color: var(--color-accent);
     letter-spacing: -0.02em;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-shadow: 0 0 20px rgba(255, 61, 0, 0.3);
+    transition: text-shadow 0.3s ease;
+}
+
+.navbar-logo:hover {
+    text-shadow: 0 0 30px rgba(255, 61, 0, 0.5);
+}
+
+.logo-monogram {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 2px solid var(--color-accent);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: var(--color-accent);
+    background: rgba(255, 61, 0, 0.08);
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-logo:hover .logo-monogram {
+    background: var(--color-accent);
+    color: var(--color-black);
+    box-shadow: 0 0 20px rgba(255, 61, 0, 0.4);
 }
 
 .navbar-links {
