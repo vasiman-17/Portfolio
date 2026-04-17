@@ -4,30 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaibhav Vasistha — Full Stack Developer</title>
+    <meta name="description" content="Full Stack Developer building scalable, production-ready applications with React, Node.js, and modern web technologies. Open to opportunities.">
+    <meta name="keywords" content="Full Stack Developer, React, Node.js, MongoDB, Web Developer, Vaibhav Vasistha">
+    <meta name="author" content="Vaibhav Vasistha">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- NAVBAR WITH CODE SNIPPETS -->
-    <nav class="navbar">
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
         <div class="navbar-content">
-            <a href="#" class="navbar-logo">Vaibhav</a>
+            <a href="#" class="navbar-logo">Vaibhav Vasistha</a>
             <div class="navbar-links">
-                <a href="#work" class="nav-link">Work</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#work" class="nav-link">WORK</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
             </div>
-
-            <!-- CODE SNIPPETS ON RIGHT -->
-            <div class="navbar-snippets">
-                <div class="snippet-item">const build = <span class="snippet-accent">"amazing"</span></div>
-                <div class="snippet-item">async deploy() { <span class="snippet-accent">✓</span> }</div>
-                <div class="snippet-item">print(<span class="snippet-accent">"AI"</span>)</div>
-                <div class="snippet-item">git push <span class="snippet-accent">origin</span></div>
-            </div>
-
             <button class="menu-toggle" aria-label="menu">
                 <span></span>
                 <span></span>
@@ -46,6 +40,10 @@
     <section id="hero" class="hero">
         <div class="hero-container">
             <div class="hero-content reveal-up" style="--delay: 0.1s;">
+                <div class="availability-badge reveal-up" style="--delay: 0.05s;">
+                    <span class="status-dot"></span>
+                    Available for Opportunities
+                </div>
                 <h1 class="text-huge">
                     <span class="word">Full</span>
                     <span class="word">Stack</span>
@@ -61,11 +59,55 @@
             </div>
             <div class="hero-visual reveal-right" style="--delay: 0.4s;">
                 <div class="gradient-orb"></div>
-                <div class="code-block">
-                    <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">buildAmazing</span> = <span class="code-string">"solutions"</span></div>
-                    <div class="code-line"><span class="code-keyword">function</span> <span class="code-func">deploy</span>() {</div>
-                    <div class="code-line indent-1"><span class="code-keyword">return</span> <span class="code-string">"production ready"</span></div>
-                    <div class="code-line">}</div>
+                <div class="code-boxes-grid">
+                    <!-- CODE BOX 1: Original -->
+                    <div class="code-block code-block-1">
+                        <div class="code-block-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="code-filename">main.py</span>
+                        </div>
+                        <div class="code-line"><span class="code-keyword">import</span> <span class="code-string">"expertise"</span></div>
+                        <div class="code-line"><span class="code-keyword">def</span> <span class="code-func">build_amazing</span>():</div>
+                        <div class="code-line indent-1"><span class="code-keyword">return</span> <span class="code-string">"solutions"</span></div>
+                        <div class="code-line"></div>
+                        <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">shipFast</span> = <span class="code-string">"production"</span></div>
+                        <div class="code-line"><span class="code-keyword">git</span> push <span class="code-accent">origin</span> main</div>
+                        <div class="code-line"><span class="code-keyword">async</span> deploy() { ✓ }</div>
+                    </div>
+
+                    <!-- CODE BOX 2: React Component -->
+                    <div class="code-block code-block-2">
+                        <div class="code-block-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="code-filename">App.jsx</span>
+                        </div>
+                        <div class="code-line"><span class="code-keyword">const</span> <span class="code-func">Portfolio</span> = () => {</div>
+                        <div class="code-line indent-1"><span class="code-keyword">const</span> [<span class="code-var">skills</span>] = <span class="code-func">useState</span>([</div>
+                        <div class="code-line indent-2"><span class="code-string">"React"</span>, <span class="code-string">"Node"</span>, <span class="code-string">"Mongo"</span></div>
+                        <div class="code-line indent-1">]);</div>
+                        <div class="code-line indent-1"><span class="code-keyword">return</span> <<span class="code-accent">App</span> /><span class="code-comment"> // ✨</span></div>
+                        <div class="code-line">};</div>
+                    </div>
+
+                    <!-- CODE BOX 3: Terminal -->
+                    <div class="code-block code-block-3">
+                        <div class="code-block-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="code-filename">terminal</span>
+                        </div>
+                        <div class="code-line"><span class="code-accent">$</span> npm run build</div>
+                        <div class="code-line"><span class="code-string">✓ compiled successfully</span></div>
+                        <div class="code-line"><span class="code-accent">$</span> npm run deploy</div>
+                        <div class="code-line"><span class="code-string">✓ deployed to production</span></div>
+                        <div class="code-line"><span class="code-accent">$</span> git push origin main</div>
+                        <div class="code-line"><span class="code-string">✓ pushed to remote</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -79,7 +121,7 @@
                 <div class="experience-item reveal-left" style="--delay: 0.1s;">
                     <div class="exp-header">
                         <h3 class="exp-title">Robocon</h3>
-                        <span class="exp-date">Hands-on Training • August 2023 – September 2023</span>
+                        <span class="exp-date">Hands-on Training • August 2024 – September 2024</span>
                     </div>
                     <p class="exp-description">Completed intensive hands-on training in full-stack web development, mastering frontend technologies and backend development. Contributed to club projects involving complex collaborative systems and debugging. Strengthened problem-solving skills through practical implementation of web development concepts and deployment strategies.</p>
                     <div class="exp-tags">
@@ -93,9 +135,9 @@
                 <div class="experience-item reveal-left" style="--delay: 0.2s;">
                     <div class="exp-header">
                         <h3 class="exp-title">Full Stack Developer</h3>
-                        <span class="exp-date">Self-Employed | 2023–Present</span>
+                        <span class="exp-date">Self-Employed | 2024–Present</span>
                     </div>
-                    <p class="exp-description">Building production-level applications from concept to deployment. Architecting scalable backend systems with Node.js and Express, creating responsive frontends with React, and managing NoSQL databases. Implementing authentication systems, REST APIs, and deploying applications to production environments.</p>
+                    <p class="exp-description">Building production-level applications from concept to deployment. Architecting scalable backend systems with Node.js and Express, creating responsive frontends with React, and managing NoSQL databases. Implementing authentication systems, REST APIs, and deploying applications to production environments serving real users in college community.</p>
                     <div class="exp-tags">
                         <span class="tag">React</span>
                         <span class="tag">Node.js</span>
@@ -118,7 +160,7 @@
                     <div class="project-badge">01</div>
                     <div class="project-info">
                         <h3 class="project-title">SYNCRO</h3>
-                        <p class="project-brief">Team collaboration platform with OAuth authentication, JWT tokens, real-time project discovery and application tracking</p>
+                        <p class="project-brief">Full-stack team collaboration platform enabling seamless project management and application tracking. Features include Google OAuth authentication, JWT-based security, real-time project discovery, and comprehensive tracking system. Built to streamline team workflows and enhance collaborative productivity for college communities.</p>
                         <div class="project-tech">
                             <span class="tech-badge">React</span>
                             <span class="tech-badge">Node.js</span>
@@ -131,11 +173,7 @@
                             <a href="https://syncro-brown.vercel.app/auth" target="_blank" class="link-arrow">Live Demo →</a>
                         </div>
                     </div>
-                    <div class="project-preview"
-                        data-preview-image="assets/syncro.png"
-                        data-preview-title="SYNCRO"
-                        data-preview-desc="Team Collaboration Platform"
-                    ></div>
+                    <div class="project-preview" data-preview-image="assets/syncro.png" data-preview-title="SYNCRO" data-preview-desc="Team Collaboration Platform"></div>
                 </div>
 
                 <!-- PROJECT 2: FLOWBOARD -->
@@ -143,7 +181,7 @@
                     <div class="project-badge">02</div>
                     <div class="project-info">
                         <h3 class="project-title">FLOWBOARD</h3>
-                        <p class="project-brief">Visual API orchestration tool with node-based workflow builder and DAG execution engine for complex automation</p>
+                        <p class="project-brief">Visual API orchestration tool featuring a powerful node-based workflow builder with DAG (Directed Acyclic Graph) execution engine. Enables users to build, test, and execute complex workflows through an intuitive canvas interface. Designed for developers and non-technical users to automate API integrations without writing code.</p>
                         <div class="project-tech">
                             <span class="tech-badge">Node.js</span>
                             <span class="tech-badge">MongoDB</span>
@@ -156,11 +194,7 @@
                             <span class="link-disabled">Coming Soon</span>
                         </div>
                     </div>
-                    <div class="project-preview"
-                        data-preview-image="assets/flowboard.png"
-                        data-preview-title="FLOWBOARD"
-                        data-preview-desc="Visual API Orchestration"
-                    ></div>
+                    <div class="project-preview" data-preview-image="assets/flowboard.png" data-preview-title="FLOWBOARD" data-preview-desc="Visual API Orchestration"></div>
                 </div>
 
                 <!-- PROJECT 3: DICE GAME -->
@@ -168,7 +202,7 @@
                     <div class="project-badge">03</div>
                     <div class="project-info">
                         <h3 class="project-title">DICE GAME</h3>
-                        <p class="project-brief">Interactive browser-based game featuring real-time gameplay, dynamic UI updates, and automated winner detection</p>
+                        <p class="project-brief">Interactive browser-based 2-player dice game featuring real-time gameplay mechanics and dynamic UI updates. Implements automatic winner detection, score tracking, and engaging animations. Pure vanilla JavaScript implementation showcasing DOM manipulation and game logic without external frameworks or libraries.</p>
                         <div class="project-tech">
                             <span class="tech-badge">HTML5</span>
                             <span class="tech-badge">CSS3</span>
@@ -180,11 +214,7 @@
                             <span class="link-disabled">Coming Soon</span>
                         </div>
                     </div>
-                    <div class="project-preview"
-                        data-preview-image="assets/dice-game.png"
-                        data-preview-title="DICE GAME"
-                        data-preview-desc="Interactive Browser Game"
-                    ></div>
+                    <div class="project-preview" data-preview-image="assets/dice-game.png" data-preview-title="DICE GAME" data-preview-desc="Interactive Browser Game"></div>
                 </div>
             </div>
         </div>
@@ -199,58 +229,42 @@
         </div>
     </section>
 
-    <!-- SKILLS SECTION (ANIMATED) -->
+    <!-- SKILLS SECTION — INFINITE MARQUEE -->
     <section id="skills" class="skills scroll-reveal">
         <div class="skills-container">
             <h2 class="section-title reveal-up">Technical Expertise</h2>
-
-            <div class="skills-wrapper">
-                <!-- FRONTEND SKILLS -->
-                <div class="skill-group" style="--delay: 0.1s;">
-                    <h3 class="group-title">Frontend</h3>
-                    <div class="skills-scroll-container">
-                        <div class="skills-scroll-track">
-                            <span class="skill-item">JavaScript ES6+</span>
-                            <span class="skill-item">React</span>
-                            <span class="skill-item">HTML5 & CSS3</span>
-                            <span class="skill-item">TypeScript</span>
-                            <span class="skill-item">Tailwind CSS</span>
-                            <span class="skill-item">Responsive Design</span>
-                            <span class="skill-item">JavaScript ES6+</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- BACKEND SKILLS -->
-                <div class="skill-group" style="--delay: 0.2s;">
-                    <h3 class="group-title">Backend</h3>
-                    <div class="skills-scroll-container">
-                        <div class="skills-scroll-track">
-                            <span class="skill-item">Node.js</span>
-                            <span class="skill-item">Express.js</span>
-                            <span class="skill-item">MongoDB</span>
-                            <span class="skill-item">RESTful APIs</span>
-                            <span class="skill-item">JWT Auth</span>
-                            <span class="skill-item">Database Design</span>
-                            <span class="skill-item">Node.js</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- AI/ML & TOOLS -->
-                <div class="skill-group" style="--delay: 0.3s;">
-                    <h3 class="group-title">AI/ML & Tools</h3>
-                    <div class="skills-scroll-container">
-                        <div class="skills-scroll-track">
-                            <span class="skill-item">Machine Learning</span>
-                            <span class="skill-item">Python</span>
-                            <span class="skill-item">Git & GitHub</span>
-                            <span class="skill-item">Docker</span>
-                            <span class="skill-item">Vercel</span>
-                            <span class="skill-item">Firebase</span>
-                            <span class="skill-item">Machine Learning</span>
-                        </div>
-                    </div>
+            <div class="marquee-wrapper">
+                <div class="marquee-track">
+                    <!-- First set -->
+                    <div class="skill-badge">JavaScript</div>
+                    <div class="skill-badge">React</div>
+                    <div class="skill-badge">Node.js</div>
+                    <div class="skill-badge">MongoDB</div>
+                    <div class="skill-badge">Python</div>
+                    <div class="skill-badge">HTML5 & CSS3</div>
+                    <div class="skill-badge">Express.js</div>
+                    <div class="skill-badge">REST APIs</div>
+                    <div class="skill-badge">Git & GitHub</div>
+                    <div class="skill-badge">Docker</div>
+                    <div class="skill-badge">TypeScript</div>
+                    <div class="skill-badge">ML/AI</div>
+                    <div class="skill-badge">PostgreSQL</div>
+                    <div class="skill-badge">Redis</div>
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="skill-badge">JavaScript</div>
+                    <div class="skill-badge">React</div>
+                    <div class="skill-badge">Node.js</div>
+                    <div class="skill-badge">MongoDB</div>
+                    <div class="skill-badge">Python</div>
+                    <div class="skill-badge">HTML5 & CSS3</div>
+                    <div class="skill-badge">Express.js</div>
+                    <div class="skill-badge">REST APIs</div>
+                    <div class="skill-badge">Git & GitHub</div>
+                    <div class="skill-badge">Docker</div>
+                    <div class="skill-badge">TypeScript</div>
+                    <div class="skill-badge">ML/AI</div>
+                    <div class="skill-badge">PostgreSQL</div>
+                    <div class="skill-badge">Redis</div>
                 </div>
             </div>
         </div>
@@ -259,70 +273,95 @@
     <!-- ABOUT SECTION -->
     <section id="about" class="about scroll-reveal">
         <div class="about-container">
-            <h2 class="section-title reveal-up">Building the Future, One Line at a Time</h2>
-
-            <div class="about-content">
+            <h2 class="section-title reveal-up">About Me</h2>
+            <div class="about-grid">
                 <div class="about-text reveal-up" style="--delay: 0.1s;">
                     <p>
                         I'm a full-stack developer passionate about creating elegant solutions to complex problems. With expertise in modern web technologies, I transform ideas into production-ready applications that users love.
                     </p>
                     <p>
-                        My journey started with curiosity about how things work online. Today, I'm proficient in everything from responsive frontend design to scalable backend architecture. I combine technical depth with a user-first mindset, while currently expanding into AI/ML to build smarter solutions.
+                        My journey started with curiosity about how things work online. Today, I'm proficient in everything from responsive frontend design to scalable backend architecture. I've served real people in my college community by building live websites and applications that solve actual problems.
                     </p>
                     <p>
-                        Currently pursuing advanced studies in Artificial Intelligence at SRM KTR while actively building real products. I believe in continuous learning, clean code, and shipping fast.
+                        Currently expanding into AI/ML to build smarter solutions. I believe in continuous learning, clean code, and shipping fast. Always eager to collaborate and create products that make a real impact.
                     </p>
                 </div>
-
-                <div class="about-skills reveal-up" style="--delay: 0.2s;">
-                    <div class="floating-skill" style="animation-delay: 0s;">React</div>
-                    <div class="floating-skill" style="animation-delay: 0.5s;">Node.js</div>
-                    <div class="floating-skill" style="animation-delay: 1s;">MongoDB</div>
-                    <div class="floating-skill" style="animation-delay: 1.5s;">Python</div>
-                    <div class="floating-skill" style="animation-delay: 2s;">JavaScript</div>
-                    <div class="floating-skill" style="animation-delay: 2.5s;">ML</div>
+                <div class="about-skills-float reveal-right" style="--delay: 0.3s;">
+                    <div class="floating-skill" style="--x: 15%; --y: 10%; --duration: 4s; --delay-float: 0s;">React</div>
+                    <div class="floating-skill" style="--x: 60%; --y: 5%; --duration: 5s; --delay-float: 0.5s;">Node.js</div>
+                    <div class="floating-skill" style="--x: 35%; --y: 35%; --duration: 4.5s; --delay-float: 1s;">MongoDB</div>
+                    <div class="floating-skill" style="--x: 70%; --y: 40%; --duration: 3.8s; --delay-float: 0.3s;">Python</div>
+                    <div class="floating-skill" style="--x: 10%; --y: 60%; --duration: 5.2s; --delay-float: 0.7s;">Docker</div>
+                    <div class="floating-skill" style="--x: 55%; --y: 65%; --duration: 4.2s; --delay-float: 1.2s;">TypeScript</div>
+                    <div class="floating-skill" style="--x: 30%; --y: 80%; --duration: 3.5s; --delay-float: 0.2s;">REST APIs</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA SECTION -->
-    <section id="contact" class="cta scroll-reveal">
-        <div class="cta-container">
-            <h2 class="cta-title reveal-up">Got An Idea?</h2>
-            <p class="cta-subtitle reveal-up" style="--delay: 0.1s;">Let's build something amazing together.</p>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact scroll-reveal">
+        <div class="contact-container">
+            <h2 class="section-title reveal-up">Get In Touch</h2>
+            <p class="contact-subtitle reveal-up" style="--delay: 0.1s;">
+                I'm always open to discussing new projects, creative ideas, or opportunities to be part of something great.
+            </p>
+            <div class="contact-grid reveal-up" style="--delay: 0.2s;">
+                <!-- GitHub -->
+                <a href="https://github.com/vasiman-17" target="_blank" class="contact-card" id="contact-github">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-label">GitHub</h3>
+                    <p class="contact-value">vasiman-17</p>
+                    <span class="contact-arrow">→</span>
+                </a>
 
-            <!-- SOCIAL BUTTONS -->
-            <div class="social-buttons reveal-up" style="--delay: 0.2s;">
-                <button class="social-btn github-btn" onclick="window.open('https://github.com/vasiman-17', '_blank')">
-                    <span class="btn-icon">〰</span>
-                    <span class="btn-text">View GitHub</span>
-                </button>
-                <button class="social-btn linkedin-btn" onclick="window.open('https://www.linkedin.com/in/vaibhav-vasistha-8a6803358/', '_blank')">
-                    <span class="btn-icon">→</span>
-                    <span class="btn-text">View LinkedIn</span>
-                </button>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/vaibhav-vasistha-8a6803358/" target="_blank" class="contact-card" id="contact-linkedin">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-label">LinkedIn</h3>
+                    <p class="contact-value">Vaibhav Vasistha</p>
+                    <span class="contact-arrow">→</span>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:vaibhav.vasistha06@gmail.com" class="contact-card" id="contact-email">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-label">Email</h3>
+                    <p class="contact-value">vaibhav.vasistha06@gmail.com</p>
+                    <span class="contact-arrow">→</span>
+                </a>
             </div>
-
-            <!-- CONTACT FORM -->
-            <form class="contact-form reveal-up" style="--delay: 0.3s;" id="contactForm">
-                <input type="text" id="contactName" placeholder="Your name" required class="form-input">
-                <input type="email" id="contactEmail" placeholder="Your email" required class="form-input">
-                <textarea id="contactMsg" placeholder="Tell me about your project" rows="4" required class="form-input"></textarea>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+            <div class="contact-cta reveal-up" style="--delay: 0.3s;">
+                <a href="assets/resume.pdf" target="_blank" class="btn btn-primary">Download Resume</a>
+            </div>
         </div>
     </section>
 
-    <!-- SUCCESS MODAL -->
-    <div class="success-modal" id="successModal">
-        <div class="modal-content">
-            <div class="modal-icon">✓</div>
-            <h3>Message Sent!</h3>
-            <p>Thanks for reaching out. I'll get back to you soon.</p>
-            <button class="modal-close" onclick="document.getElementById('successModal').classList.remove('show')">Close</button>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://github.com/vasiman-17" target="_blank" class="footer-social-link">GitHub</a>
+                <span class="footer-divider">·</span>
+                <a href="https://www.linkedin.com/in/vaibhav-vasistha-8a6803358/" target="_blank" class="footer-social-link">LinkedIn</a>
+                <span class="footer-divider">·</span>
+                <a href="mailto:vaibhav.vasistha06@gmail.com" class="footer-social-link">Email</a>
+            </div>
+            <p>Vaibhav Vasistha © <span id="year"></span> All Rights Reserved</p>
         </div>
-    </div>
+    </footer>
 
     <!-- BACK TO TOP BUTTON -->
     <button id="backToTop" class="back-to-top" aria-label="back to top">↑</button>
