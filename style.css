@@ -711,45 +711,95 @@ a {
     margin: 0 auto;
 }
 
-.experience-list {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-3xl);
+.timeline-wrapper {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--spacing-xl) 0;
 }
 
-.experience-item {
-    padding-left: var(--spacing-xl);
-    border-left: 3px solid var(--color-accent);
-    transition: all 0.3s ease;
-    background: rgba(255, 61, 0, 0.02);
-    padding: var(--spacing-lg);
+.timeline-line {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, rgba(255, 61, 0, 0.8) 0%, rgba(255, 61, 0, 0.1) 100%);
+    border-radius: 2px;
 }
 
-.experience-item:hover {
-    border-left-color: var(--color-white);
-    transform: translateX(12px);
-    background: rgba(255, 61, 0, 0.05);
+.timeline-item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: var(--spacing-3xl);
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-node {
+    position: absolute;
+    left: 11px;
+    top: 24px;
+    width: 20px;
+    height: 20px;
+    background: var(--color-darker);
+    border: 3px solid var(--color-accent);
+    border-radius: 50%;
+    z-index: 2;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 10px rgba(255, 61, 0, 0.3);
+}
+
+.timeline-item:hover .timeline-node {
+    background: var(--color-accent);
+    box-shadow: 0 0 20px rgba(255, 61, 0, 0.8);
+    transform: scale(1.2);
+}
+
+.timeline-content {
+    background: rgba(15, 15, 15, 0.7);
+    border: 1px solid rgba(255, 61, 0, 0.15);
+    border-radius: 12px;
+    padding: var(--spacing-2xl);
+    transition: all 0.4s ease;
+    cursor: none;
+    backdrop-filter: blur(10px);
+}
+
+.timeline-item:hover .timeline-content {
+    border-color: rgba(255, 61, 0, 0.5);
+    background: rgba(20, 20, 20, 0.9);
+    transform: translateX(10px);
+    box-shadow: 0 15px 40px rgba(255, 61, 0, 0.1);
 }
 
 .exp-header {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: var(--spacing-xl);
+    flex-direction: column;
+    gap: var(--spacing-xs);
     margin-bottom: var(--spacing-md);
-    flex-wrap: wrap;
-}
-
-.exp-title {
-    font-size: 1.75rem;
-    color: var(--color-accent);
-    font-weight: 700;
 }
 
 .exp-date {
-    font-size: 0.875rem;
-    color: var(--color-light-gray);
-    white-space: nowrap;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--color-accent);
+    background: rgba(255, 61, 0, 0.1);
+    padding: 6px 12px;
+    border-radius: 20px;
+    width: fit-content;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.exp-title {
+    font-size: 1.8rem;
+    color: var(--color-white);
+    font-weight: 700;
+    margin-top: var(--spacing-sm);
 }
 
 .exp-description {
@@ -766,22 +816,52 @@ a {
 
 .tag {
     font-size: 0.75rem;
-    padding: var(--spacing-xs) var(--spacing-sm);
-    background: var(--color-accent-light);
-    border: 1px solid var(--color-accent);
-    color: var(--color-accent);
+    padding: 6px 12px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-light-gray);
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .tag {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    background: rgba(255, 61, 0, 0.05);
 }
 
 @media (max-width: 768px) {
     .experience {
         padding: var(--spacing-2xl) var(--spacing-md);
     }
+    
+    .timeline-wrapper {
+        padding: 0;
+    }
 
-    .exp-header {
-        flex-direction: column;
-        gap: var(--spacing-sm);
+    .timeline-item {
+        padding-left: 50px;
+    }
+
+    .timeline-line {
+        left: 10px;
+    }
+
+    .timeline-node {
+        left: 1px;
+        top: 20px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .timeline-content {
+        padding: var(--spacing-lg);
+    }
+
+    .exp-title {
+        font-size: 1.4rem;
     }
 }
 
