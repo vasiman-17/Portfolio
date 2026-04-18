@@ -39,7 +39,7 @@ html {
 }
 
 body {
-    background: linear-gradient(135deg, var(--color-black) 0%, var(--color-dark) 100%);
+    background: var(--color-black);
     color: var(--color-white);
     font-family: var(--font-body);
     font-size: 16px;
@@ -47,6 +47,23 @@ body {
     overflow-x: hidden;
     opacity: 0;
     animation: fadeInBody 0.6s ease forwards;
+    position: relative;
+    z-index: 1;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    z-index: -1;
+    pointer-events: none;
 }
 
 @keyframes fadeInBody {
@@ -711,6 +728,22 @@ a {
     margin: 0 auto;
 }
 
+.exp-edu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: start;
+}
+
+.col-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-2xl);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid rgba(255, 61, 0, 0.2);
+}
+
 .timeline-wrapper {
     position: relative;
     max-width: 1000px;
@@ -830,6 +863,13 @@ a {
     border-color: var(--color-accent);
     color: var(--color-accent);
     background: rgba(255, 61, 0, 0.05);
+}
+
+@media (max-width: 1024px) {
+    .exp-edu-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-3xl);
+    }
 }
 
 @media (max-width: 768px) {
